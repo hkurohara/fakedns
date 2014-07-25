@@ -1,0 +1,3 @@
+*/5 * * * * /opt/fakedns/scripts/dhcplistup your_github_user your_password hostnamelist1
+*/5 * * * * /opt/fakedns/scripts/updatehosts your_github_user your_password hostnamelist1
+
