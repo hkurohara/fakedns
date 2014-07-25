@@ -23,5 +23,5 @@ EOF_SQL
 cd $WORKDIR
 git add hosts
 git commit -m "hosts updated"
-git push 
+git push origin master
 
