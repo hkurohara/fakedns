@@ -2,7 +2,11 @@
 set gitcmd="c:\Program Files (x86)\Git\bin\git.exe"
 set git_user_name=%1
 set git_password=%2
-set git_repository=hostnamelist
+if "%3" == "" (
+	set git_repository=hostnamelist
+) else (
+	set git_repository=%3
+)
 set git_url=https://%git_user_name%:%git_password%@github.com/%git_user_name%/%git_repository%.git
 
 if not exist %git_repository% (
