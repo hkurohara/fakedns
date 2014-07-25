@@ -17,7 +17,7 @@ cat > $WORKDIR/hosts <<EOF_LISTHEAD
 EOF_LISTHEAD
 
 sqlite3 /var/tmp/fakedns/dhcpdata.db >> $WORKDIR/hosts <<EOF_SQL
-select ipaddr, hostname from maclist order by hostname;
+select ipaddr||'      '||hostname from maclist order by hostname;
 EOF_SQL
 
 cd $WORKDIR
