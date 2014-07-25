@@ -14,6 +14,7 @@ if not exist %git_repository% (
 ) else (
 cd %git_repository%
 %gitcmd% pull
+cd ..
 )
 
 cd %git_repository%
